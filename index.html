@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Crystals Collector Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">The Crystals Collector Game</h1>
+    </div>
+
+    <div class="container"> 
+        <div class="row"> 
+            <div class="row1">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h3>Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>You are given a random target number and you must try to match it. There are four crystals below.
+                            By clicking on a crystal you will add a specific amount of points to your number. You win the
+                            game by matching your number to the random target number. If you go over the target number, you
+                            lose. The value of the crystals will change each time you click on them.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">
+                                <h3 id="crystals">Score</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h4 id="wins"></h4>
+                                <h4 id="losses"></h4>
+                                <h4 id="targetNumber"></h4>
+                                <h4 id="userNumber"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" id="change">
+                    <div class="row3">
+                        <div class="panel panel-default"> 
+                            <div class="panel-heading text-center">
+                                <h3 id="crystals">Crystals</h3>
+                            </div>
+                            <div class="row">
+                                <div class="power text-center">
+                                    <img src="assets/images/bluecrystal.png" class="click" id="blue">
+                                    <img src="assets/images/greencrystal.png" class="click" id="green">
+                                    <img src="assets/images/pinkcrystal.png" class="click" id="pink">
+                                    <img src="assets/images/purplecrystal.png" class="click" id="purple">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
