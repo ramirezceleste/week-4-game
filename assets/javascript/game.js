@@ -64,7 +64,6 @@ $("#blue").on("click", function () {
    else if (userNumber > targetNumber) {
        lose();
    }
-
     
 });
 
@@ -107,5 +106,6 @@ $("#purple").on("click", function () {
     else if (userNumber > targetNumber) {
         lose();
     }
+    
 });
 
