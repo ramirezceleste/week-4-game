@@ -36,15 +36,6 @@ var purple = Math.floor((Math.random()* 12) + 1);
      $("#userNumber").text("Your number " + userNumber);
  }
 
- // Function for crystals to change value every time clicked 
-
- function changeNumber() {
-    blue = Math.floor((Math.random()* 12) + 1);
-    green = Math.floor((Math.random()* 12) + 1);
-    pink = Math.floor((Math.random()* 12) + 1);
-    purple = Math.floor((Math.random()* 12) + 1);
- }
-
 // Function for wins and losses
 
 function win() {
@@ -65,7 +56,6 @@ function lose() {
 $("#blue").on("click", function () {
     userNumber = userNumber + blue 
     $("#userNumber").text("Your number: " + userNumber);
-    changeNumber();
 
    if (userNumber === targetNumber) {
        win();
@@ -81,7 +71,6 @@ $("#blue").on("click", function () {
 $("#green").on("click", function () {
     userNumber = userNumber + green
     $("#userNumber").text("Your number: " + userNumber);
-    changeNumber();
 
     if (userNumber === targetNumber) {
         win();
@@ -96,7 +85,6 @@ $("#green").on("click", function () {
 $("#pink").on("click", function () {
     userNumber = userNumber + pink
     $("#userNumber").text("Your number: " + userNumber);
-    changeNumber();
 
     if (userNumber === targetNumber) {
         win();
@@ -111,7 +99,6 @@ $("#pink").on("click", function () {
 $("#purple").on("click", function () {
     userNumber = userNumber + purple
     $("#userNumber").text("Your number: " + userNumber);
-    changeNumber();
 
     if (userNumber === targetNumber) {
         win();
